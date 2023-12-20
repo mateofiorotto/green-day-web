@@ -1,0 +1,1345 @@
+html {
+    scroll-behavior: smooth;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hue {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-image: url(../imagenes/fondo_pagina.webp);
+  font-family: 'Playfair Display', sans-serif;
+  color: white;
+  animation: fadeIn 1s ease-in-out;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+nav {
+  font-size: 20px;
+}
+
+#contenedor-pagina, header, footer {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+footer {
+  border-top: 2px solid white;
+  display: block;
+  padding: 10px 0;
+}
+
+header {
+  display: block;
+  padding: 10px 0;
+  border-bottom: 2px solid white;
+}
+
+#indice-pagina, #titulo-pagina {
+    padding: 10px 0;
+  }
+
+  #ul-nav > li, #submenu-discografia, #submenu-la-banda {
+    transition: background-color 0.2s ease;
+    z-index: 1;
+  }
+
+  #ul-nav > li:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  #ul-nav, #gracias-indice {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  #gracias-indice li {
+    margin: 10px 25px;
+    font-size: 30px;
+    list-style: none;
+    padding: 0;
+  }
+
+  #gracias-indice a::before {
+    content: "\025b8";
+    vertical-align: middle;
+  }
+
+  #gracias-indice a {
+    transition: color 0.5s ease;
+  }
+
+  #gracias-indice a:hover {
+    color: magenta;
+  }
+
+  #submenu-discografia, #submenu-la-banda {
+    display: none;
+    position: absolute;
+    padding: 10px 0;
+    margin: auto;
+  }
+
+  #submenu-discografia li, #submenu-la-banda li {
+    margin: 20px 0;
+    border-bottom: 1px solid #555;
+  }
+
+  #submenu-discografia li:last-child, #submenu-la-banda li:last-child {
+    border-bottom: 0px;
+  }
+
+  #submenu-la-banda a:hover, #submenu-discografia a:hover {
+    transition: color 0.3s ease;
+  }
+
+  #submenu-la-banda a:hover, #submenu-discografia a:hover {
+    color:magenta;
+  }
+
+  #discografia-indice:hover #submenu-discografia, #la-banda-indice:hover #submenu-la-banda {
+    display: block;
+  }
+
+  #submenu-discografia, #submenu-la-banda {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  #indice-pagina li {
+    margin-right: 20px;
+    padding: 10px 0px;
+    margin-right: 0;
+  }
+  
+  #indice-pagina li:last-child {
+    margin-right: 0;
+  }
+  
+  #indice-pagina a, #titulo-pagina {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+#titulo-pagina {
+  text-align: center;
+  margin: 0;
+  font-size: 100px;
+  text-transform: uppercase;
+}
+
+#la-banda, #historia, #estilo-musical-influencias, #miembros, #alumnos-integrantes {
+  display: none;
+}
+
+#la-banda:target, #historia:target, #estilo-musical-influencias:target, #miembros:target, #alumnos-integrantes:target {
+  display: block;
+  animation: fadeIn 1s ease-in-out;
+  opacity: 1;
+}
+
+section div {
+  border-radius: 10px;
+  margin: 50px 20px;
+}
+
+section img {
+  display: block;
+  margin: auto;
+}
+
+section h2, .tarjeta-disco > h3 {
+  text-transform: uppercase;
+  font-size: 50px;
+  padding: 20px;
+  border-bottom: 1px solid white;
+  margin-bottom: 0px;
+  margin-left: 20px;
+}
+
+section > div {
+  margin-top: 10px;
+}
+
+section p {
+  padding: 20px;
+  margin: 0px;
+  padding-top: 5px;
+  font-size: 20px;
+}
+
+
+.parrafo-post-img {
+  padding: 20px;
+}
+
+#titulo-inicio, #titulo-gracias {
+  font-size: 120px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-left: 0px;
+  
+}
+
+#parrafo-final {
+  font-size: 40px;
+  text-align: center;
+  margin: 50px;
+}
+
+.parrafo-mid-inicio {
+  font-size: 24px;
+  text-align: center;
+}
+
+#parrafo-gracias {
+  font-size: 24px;
+  text-align: center;
+}
+
+#parrafo-vuelve-a {
+  font-size: 32px;
+  text-align: center;
+  font-weight: bold;
+  color: magenta;
+  text-transform: uppercase;
+}
+
+#parrafo-inicio, #texto-gracias {
+  margin: 50px;
+}
+
+form {
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  margin: 0px 0px;
+  width: 200px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+input[type="file"] {
+  display: block;
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 100%;
+  background-color: #0074cc;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  margin: 20px 0;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+input[type="submit"]:hover {
+  background-color: #005aa0;
+}
+
+
+fieldset {
+  margin: 20px 0;
+}
+
+.genero-form {
+  margin: 10px;
+}
+
+#contacto-titulo {
+  text-align: center;
+}
+
+.icono-redes {
+  width: 32px;
+  height: 32px;
+  background-size: cover;
+  margin: 10px;
+  transition: transform 0.3s ease;
+  font-size: 0px;
+  display: flex;
+  transition: all .2s ease-in-out
+}
+
+@media (hover:hover) {
+ .icono-redes:hover, .icono-redes:active {
+  transform: scale(1.2);
+ }
+}
+
+#contenedor-links li a {
+  background-image: url(../imagenes/sprites_redes.png);
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+}
+
+#red-fb {
+  width: 32px; height: 32px;
+  background: url('css_sprites.png') -10px -10px;
+}
+
+#red-tiktok {
+    width: 32px; height: 32px;
+    background: url('css_sprites.png') -62px -10px;
+}
+
+#red-x {
+  width: 32px; height: 32px;
+  background: url('css_sprites.png') -114px -10px;
+}
+
+#red-yt {
+  width: 32px; height: 32px;
+  background: url('css_sprites.png') -166px -10px;
+}
+
+#red-ig {
+    width: 32px; height: 32px;
+    background: url('css_sprites.png') -218px -10px;
+}
+
+#contenedor-links ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+#boton-volver {
+  text-transform: uppercase;
+  color: white;
+  font-size: 36px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  margin: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #fff;
+  transition: font-size 0.3s;
+}
+
+@media (hover:hover) {
+#boton-volver:hover {
+  font-size: 38px;
+  color: magenta;
+}
+}
+
+section {
+  background-color: rgba(0,0,0,0.4);
+  border-radius: 15px;
+}
+
+.seccion-canciones {
+  margin-bottom: 80px;
+  background-color: transparent;
+}
+
+section li:last-child {
+  padding-bottom: 15px;
+}
+
+iframe {
+  border: 0;
+  margin: 20px 0px;
+  display: block;
+}
+
+#alumnos-integrantes {
+  text-align: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tarjetas-alumnos {
+  padding: 10px;
+  display: inline-block;
+  height: 650px;
+  width: 600px;
+  margin: 0;
+  overflow: hidden;
+}
+
+.tarjetas-alumnos h2 {
+  margin: 0 0 20px 0;
+}
+
+#alumnos-integrantes ul {
+  margin: 0;
+  padding: 0;
+}
+
+#alumnos-integrantes ul li {
+  margin-bottom: 20px;
+  font-size: 20px;
+  list-style-type: none;
+}
+
+section ol li {
+  font-size: 20px;
+}
+
+.integrantes-green-day {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.texto-integrantes {
+  flex: 1;
+  padding: 0 20px;
+  order: 2;
+}
+
+.texto-integrantes p {
+  margin-bottom: 0;
+}
+
+.texto-integrantes h3 {
+  margin-left: 20px;
+}
+
+.integrantes-green-day img {
+  margin: 0 20px;
+  order: 1;
+}
+
+blockquote, cite {
+  margin: 20px auto;
+  width: 1100px;
+}
+
+blockquote p {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+blockquote cite {
+  font-size: 24px;
+  margin-left: 20px;
+}
+
+#titulo-discografia {
+  text-align: center;
+}
+
+#discografia-div {
+  text-align: center;
+}
+
+#discografia-div > section {
+  display: inline-block;
+  margin: 20px;
+}
+
+.tarjeta-disco {
+  width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: auto 20px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+section a {
+  text-decoration: none;
+  color: white;
+}
+
+.tarjeta-disco h3 {
+  margin: 0;
+  border-top: 1px solid white;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (hover:hover) {
+.tarjeta-disco:hover {
+  transform: rotate(5deg);
+  border: 3px solid blue;
+}
+}
+
+#disco-21century, #disco-dookie, #disco-father-of-all-motherfuckers, #disco-american-idiot {
+  display: none;
+  text-align: left;
+}
+
+#disco-21century:target, #disco-dookie:target, #disco-father-of-all-motherfuckers:target, #disco-american-idiot:target {
+  display: block;
+  animation: fadeIn 1s ease-in-out;
+  opacity: 1;
+}
+
+.seccion-canciones h2 {
+  text-align: center;
+}
+
+.contratos {
+  font-size: 20px;
+}
+
+#mat-doc {
+  margin-top: 5px;
+}
+
+#mat-doc > ul > li::before {
+  content: attr(data-negrita) ": ";
+  font-weight: bold;
+}
+
+.mapa {
+  margin: 10px auto;
+}
+
+.discos ol {
+  margin: 0px;
+  padding-left: 0;
+}
+
+.discos li {
+  font-size: 20px;
+}
+
+.discos li::before {
+  margin-right: 10px;
+}
+
+.discos li:first-child::before {
+  content: "\278A";
+  color: white;
+} 
+
+.discos li:nth-child(2)::before {
+  content: "\278B";
+  color: white;
+} 
+
+.discos li:nth-child(3)::before {
+  content: "\278C";
+  color: white;
+} 
+
+.discos li:last-child::before {
+  content: "\278D";
+  color: white;
+} 
+
+#indice-index {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 200px;
+  height: 300px; 
+  border: 1px solid white;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  z-index: 1;
+  background-color: black;
+}
+
+#cerrar-indice {
+  justify-content: left;
+  text-align: left;
+  margin: 5px;
+  float: left;
+  background-color: transparent;
+  color: white;
+  border: 0px;
+  text-decoration: none;
+  text-transform:uppercase;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+#titulo-menu-indice {
+  clear: left;
+}
+
+#abrir-indice {
+  display: none;
+  position: fixed;
+  top: 50%;
+  background-color: transparent;
+  color: white;
+  border: 0px;
+  background-image: url(../imagenes/menu.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-size: 0px;
+  background-color: black;
+  width: 32px;
+  height: 32px;
+  margin-left: 10px;
+  z-index: 1;
+}
+
+#indice-index ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#indice-index li {
+  margin-bottom: 10px;
+}
+
+#indice-index a, #explora-spotify a {
+  text-decoration: none;
+  color: white;
+  text-transform:uppercase;
+  font-size: 22px;
+  transition: color 0.3s ease;
+}
+
+#explora-spotify a {
+  font-size: 32px;
+}
+
+.ultimo-iframe {
+  margin-bottom: 0px;
+}
+
+#indice-index a:hover, #cerrar-indice:hover {
+  color: magenta;
+}
+
+@media (hover:hover) {
+  #explora-spotify a:hover {
+    color: magenta;
+  }
+}
+
+#indice-index > h2 {
+  margin: 0;
+  padding: 0;
+}
+
+#indice-index {
+  left: 0px;
+}
+
+#discografia-div > section {
+  background-color: transparent;
+}
+
+#indice-pagina ul li{
+  list-style-type: none;
+}
+
+.discos {
+  font-size: 24px;
+  list-style-type: none;
+}
+
+#indice-pagina nav ul li a.current {
+  color: magenta;
+}
+
+#texto-gracias {
+  background-color: rgba(0,0,0,0.4);
+}
+
+#titulo-gracias {
+  border: 0px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+	background-clip: text;
+  -webkit-background-clip: text;
+  animation: hue 10s infinite linear;
+  -webkit-animation: hue 10s infinite linear;
+	-webkit-text-fill-color: transparent;
+}
+
+#explora-spotify p {
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  margin: 0px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #fff;
+}
+
+.subtitulo-canciones {
+  text-transform: uppercase;
+  font-size: 40px;
+  padding: 20px;
+  border-bottom: 1px solid white;
+  text-align: center;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-size: 30px; 
+  margin: 10px; 
+}
+
+.seccion-canciones h4:first-of-type {
+  margin-top: 20px;
+}
+
+h3 {
+  margin-left: 0px;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+#recuadro-negro {
+  display: none;
+}
+
+#boton-hamburguesa {
+  display: none;
+}
+
+#video-the-american-dream {
+  margin: 20px auto;
+}
+
+#historia h3 {
+  margin-left: 20px;
+ }
+
+article div, #parrafo-discos-info {
+  margin-top: 10px;
+}
+
+.parrafo-formulario {
+  margin: 10px 360px 0px 360px;
+  display: block;
+  padding-bottom: 0px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 800px) {
+
+  #contenedor-pagina, footer, header {
+    width: 800px;
+    background-color: rgba(0,0,0,0.4);
+  }
+
+  #ul-nav:hover #submenu-discografia, #ul-nav:hover #submenu-la-banda {
+    display: none;
+  }
+
+  #indice-pagina li{
+    font-size: 30px;
+  }
+
+  aside, #abrir-indice, #cerrar-indice {
+    display: none;
+  }
+
+  #ul-nav > li:hover {
+    background-color: transparent;
+  }
+
+  section {
+    background-color: transparent;
+  }
+
+  #la-banda, #historia, #estilo-musical-influencias, #miembros, #alumnos-integrantes {
+    display: block;
+  }
+
+  blockquote, cite {
+    margin: 20px auto;
+    width: 750px;
+  }
+
+  #titulo-inicio {
+    font-size: 100px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  #parrafo-final {
+    display: none;
+  }
+
+  iframe {
+    width: 700px;
+    height: 400px;
+    margin: 10px 0px;
+  }
+
+  section h2 {
+    text-align: center;
+    font-size: 60px;
+    margin-left: 0;
+  }
+  
+  section div {
+    margin: 0 20px;
+  }
+
+ h2 {
+    margin-top: 0;
+  }
+  
+  #parrafo-inicio {
+    margin-top: 0;
+  }
+  
+  section div p {
+    padding-top: 20px;
+    font-size: 20px;
+  }
+
+  #historia p, #mat-doc p {
+    padding-top: 0;
+  }
+
+  #miembros p {
+    padding: 0;
+    margin-bottom: 15px;
+  }
+
+  picture img {
+    margin: auto;
+  }
+
+  .tarjeta-disco, .tarjeta-disco img  {
+    background-color: transparent;
+  }
+
+  #discos-informacion p {
+    padding-top: 20px;
+  }
+
+  .seccion-canciones {
+    margin-bottom: 0;
+  }
+
+  #disco-21century, #disco-dookie, #disco-father-of-all-motherfuckers, #disco-american-idiot {
+    display: block;
+  }
+
+  label, legend{
+    font-size: 20px;
+  }
+
+  #texto-gracias {
+    margin: 0px;
+  }
+
+  #gracias-indice li{
+    font-size: 36px;
+  }
+
+  section h3 {
+    font-size: 26px;
+  }
+
+  .contratos li, .canciones li{
+    font-size: 24px;
+  }
+
+  .lista-canciones-div {
+    text-align: center;
+    list-style-position: inside;
+  }
+
+  .lista-canciones-div p {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .canciones {
+    padding-left: 0px;
+  }
+
+  h4 {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .tarjetas-alumnos {
+    padding: 10px;
+    display: inline-block;
+    height: 600px;
+    width: 400px;
+    margin: 0;
+  }
+
+  .tarjetas-alumnos img {
+    margin: auto;
+  }
+
+  .tarjetas-alumnos h3 {
+    font-size: 36px;
+  }
+
+  .tarjetas-alumnos a, #alumnos-integrantes ul li {
+    font-size: 24px;
+  }
+  
+  #mat-doc {
+    margin-top: 20px;
+  }
+
+  .discos li {
+    font-size: 24px;
+  }
+
+  #titulo-gracias h2 {
+    font-size: 60px;
+  }
+
+  .integrantes-green-day h3 {
+    margin-left: 0px;
+  }
+
+  .parrafo-formulario {
+    margin: 10px 80px;
+    font-size: 20px;
+  }
+
+} 
+
+@media screen and (max-width: 480px) {
+
+  header {
+    border: 0;
+    padding: 0;
+  }
+
+  section div {
+    margin-bottom: 15px;
+  }
+
+  #recuadro-negro {
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    display: flex;
+    height: 50px;
+    z-index: 2;
+    border: 1px solid rgba(255,255,255,0.3);
+    box-sizing: border-box;
+  }
+
+  section h2 {
+    margin-left: 0;
+    margin: 10px 0;
+    padding: 10px 0;
+  }
+
+  #indice-pagina {
+    background-color: rgba(0,0,0,0.8);
+    width: 200px;
+    position: absolute;
+    z-index: 1;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .animacion-hamburguesa {
+    display: block;
+    opacity: 1;
+  }
+
+  .ocultar-menu {
+    display: none;
+    opacity: 0;
+  }
+
+  #indice-pagina a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block;
+  }
+
+  #indice-pagina ul li {
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    margin: auto;
+    font-size: 20px;
+  }
+
+  #indice-pagina ul {
+    padding: 0;
+    margin: auto 0;
+    display: block;
+  }
+
+  #boton-hamburguesa {
+    background-image: url(../imagenes/menu.webp);
+    background-color: transparent;
+    border: 0px;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-size: 0px;
+    width: 32px;
+    height: 32px;
+    z-index: 1;
+    margin: auto 0;
+    display: block;
+    margin-left: 10px;
+  }
+
+  #submenu-discografia a, #submenu-la-banda a {
+    display: none;
+  }
+
+  #titulo-pagina {
+    font-size: 60px;
+    border-radius: 0;
+    box-sizing: border-box;
+  }
+
+  section, article {
+    background-color: transparent;
+  }
+
+  #titulo-inicio {
+    font-size: 60px;
+  }
+
+  .parrafo-mid-inicio {
+    font-size: 20px;
+    margin: 20px 0;
+  }
+
+  #mat-doc, #div-alumnos {
+    margin-bottom: 0;
+  }
+
+  #div-alumnos p {
+    padding-bottom: 40px;
+  }
+
+  section p {
+    font-size: 20px;
+  }
+
+  #la-banda h2, #la-banda > div {
+    margin-top: 0;
+  }
+
+  #contenedor-pagina, footer, header {
+    width: 480px;
+    background-color: rgba(0,0,0,0.4);
+  }
+
+  section, article {
+    background-color: transparent;
+  }
+
+  #indice-pagina {
+    display: none;
+  }
+
+  aside, #abrir-indice, #cerrar-indice {
+    display: none;
+  }
+
+  #ul-nav > li:hover {
+    background-color: transparent;
+  }
+
+  #la-banda, #historia, #estilo-musical-influencias, #miembros, #alumnos-integrantes {
+    display: block;
+  }
+
+  #parrafo-final {
+    display: none;
+  }
+
+  iframe {
+    width: 400px;
+    height: 400px;
+    margin: 10px 0px;
+  }
+
+  section h2 {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  blockquote, cite {
+    margin: 20px auto;
+    width: 400px;
+  }
+  
+  #alumnos-integrantes img {
+    margin: auto;
+    display: block;
+  }
+
+  #miembros > div {
+    padding: 0;
+  }
+
+  .integrantes-green-day {
+    margin: 0;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .texto-integrantes {
+    width: 400px;
+    padding: 0;
+    margin: auto;
+    display: block;
+    order: initial;
+    flex: 0;
+    text-align: center;
+  }
+
+  .texto-integrantes h3, .texto-integrantes p {
+    margin: 10px 0;
+  }
+
+  .integrantes-green-day img {
+    margin: 0px auto 50px auto;
+    display: block;
+    order: initial;
+  }
+
+  .tarjetas-alumnos {
+    padding: 0px;
+    display: block;
+    height: 370px;
+    width: 440px;
+    margin: auto;
+  }
+
+  .tarjetas-alumnos h3{
+    margin: auto 0;
+    margin-top: 15px;
+  }
+
+ #titulo-inicio {
+  margin: 0;
+  padding: 30px 0;
+ }
+
+ #parrafo-inicio {
+  margin-top: 0px;
+  margin-left: 50px;
+  margin-right: 50px;
+ }
+
+  #titulo-discografia {
+    margin-top: 0px;
+  }
+
+  .tarjeta-disco {
+    width: 300px;
+  }
+
+  .tarjeta-disco img {
+    width: 300px;
+  }
+
+  #explora-spotify a {
+    font-size: 32px;
+  }
+
+  #explora-spotify {
+    margin: 0 20px;
+    padding-bottom: 30px;
+  }
+  
+
+  #disco-21century, #disco-dookie, #disco-father-of-all-motherfuckers, #disco-american-idiot {
+    display: block;
+    text-align: center;
+  }
+
+  #disco-21century > p, #disco-dookie, #disco-father-of-all-motherfuckers, #disco-american-idiot > p{
+    font-size: 10px;
+  }
+
+  .seccion-canciones {
+    margin-bottom: 0px;
+  }
+
+  .seccion-canciones iframe {
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+  }
+
+  .seccion-canciones h4 {
+    margin-top: 20px;
+  }
+
+  .canciones {
+    padding: 0;
+    list-style-position: inside;
+  }
+
+  .canciones li {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+
+  #disco-21century > div, #disco-dookie > div, #disco-father-of-all-motherfuckers > div, #disco-american-idiot > div {
+    margin: 0
+  }  
+  
+  #disco-21century > div > p, #disco-dookie > div > p, #disco-father-of-all-motherfuckers > div > p, #disco-american-idiot > div > p {
+    font-size: 20px;
+  }
+
+  .subtitulo-canciones {
+    margin: 0;
+  }
+
+  #contacto-titulo {
+    margin-top: 0px;
+  }
+
+  #contenedor-contacto {
+    margin: 0 20px;
+  }
+
+  form {
+    width: 400px;
+  }
+  
+  label {
+    margin: 0px 0px;
+    width: 200px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  textarea,
+  select {
+    width: 400px;
+    display: block;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    width: 400px;
+  }
+  
+  fieldset {
+    width: 370px;
+  }
+
+#texto-gracias {
+  background-color: transparent;
+  margin: 0;
+}
+
+  #titulo-gracias {
+      font-size: 65px;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 0;
+  }
+
+  #parrafo-gracias {
+    font-size: 22px;
+    margin: 0;
+  }
+
+  #boton-volver {
+    font-size: 32px;
+  }
+
+ #gracias-indice {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  }
+
+  #gracias-indice li:last-child {
+    margin-bottom: 30px;
+  }
+
+  #parrafo-vuelve-a {
+    padding-bottom: 0;
+    margin-bottom: 10px;
+  } 
+
+  .parrafo-formulario {
+    margin: 10px 20px;
+    font-size: 20px;
+  }
+}

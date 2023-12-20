@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Banda - Green Day</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="javascript/scripts.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="titulo-pagina">La Banda</h1>
+        <div id="recuadro-negro">
+            <button id="boton-hamburguesa" onclick="abrirHamburguesa()">Mostrar Menú</button>
+        </div>
+        <div id="indice-pagina">
+            <nav>
+                <ul id="ul-nav">
+                    <li id="la-banda-indice"><a href="index.html">La Banda</a>
+                        <ul id="submenu-la-banda">
+                            <li><a onclick="eliminarInicio()" href="index.html#la-banda">Sobre la banda</a></li>
+                            <li><a onclick="eliminarInicio()" href="index.html#historia">Historia</a></li>
+                            <li><a onclick="eliminarInicio()" href="index.html#estilo-musical-influencias">Estilo musical e Influencias</a></li>
+                            <li><a onclick="eliminarInicio()" href="index.html#miembros">Miembros</a></li>
+                            <li><a onclick="eliminarInicio()" href="index.html#alumnos-integrantes">Alumnos</a></li>
+                        </ul>
+                    </li>
+                    <li id="discografia-indice"><a href="discografia.html">Discografía</a>
+                        <ul id="submenu-discografia">
+                            <li><a href="discografia.html#disco-21century">21st Century Breakdown</a></li>
+                            <li><a href="discografia.html#disco-american-idiot">American Idiot</a></li>
+                            <li><a href="discografia.html#disco-father-of-all-motherfuckers">Father of All Motherfuckers</a></li>
+                            <li><a href="discografia.html#disco-dookie">Dookie</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="formulario.html">Entradas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <button id="abrir-indice" onclick="abrirIndice()">Abrir índice</button>
+    <aside id="indice-index">
+        <button id="cerrar-indice" onclick="cerrarIndice()">X</button>
+        <h2 id="titulo-menu-indice">Índice</h2>
+        <ul>
+            <li><a onclick="eliminarInicio()" href="#la-banda">Sobre la banda</a></li>
+            <li><a onclick="eliminarInicio()" href="#historia">Historia</a></li>
+            <li><a onclick="eliminarInicio()" href="#estilo-musical-influencias">Estilo musical e Influencias</a></li>
+            <li><a onclick="eliminarInicio()" href="#miembros">Miembros</a></li>
+            <li><a onclick="eliminarInicio()" href="#alumnos-integrantes">Alumnos</a></li>
+        </ul>
+    </aside>
+    <main id="contenedor-pagina">
+        <div id="parrafo-inicio">
+            <h2 id="titulo-inicio">La mejor banda de Rock Punk</h2>
+            <p class="parrafo-mid-inicio"><strong>¡Bienvenido/a a la página de Green Day!</strong> Aquí se reune <em>información sobre
+                la banda, sus miembros, su estilo musical, influencias y su historia</em>. Por supuesto, se incluye
+                una <em>sección para comprar entradas y una discografía que incluye sus discos y canciones más populares</em>.
+                la icónica banda de punk rock que ha dejado una huella indeleble en la escena musical desde su 
+                formación en 1986! </p>
+            <p class="parrafo-mid-inicio">Sumérgete en el <strong>fascinante universo de este trío de California</strong>, compuesto por 
+                <strong>Billie Joe Armstrong, Mike Dirnt y Tré Cool</strong>, cuya <em>energía explosiva, letras impactantes y actitud 
+                rebelde han resonado en generaciones de fanáticos alrededor del mundo</em>. Desde sus humildes 
+                comienzos en el underground hasta convertirse en un fenómeno global, <strong>Green Day ha evolucionado 
+                constantemente, desafiando las expectativas y explorando nuevos territorios sonoros</strong>.
+            </p>
+            <p id="parrafo-final">¡Te invitamos a explorar la página usando el índice!</p>
+        </div>
+        <section id="la-banda">
+            <h2 lang="en">Green Day</h2>
+            <div>
+                <p><strong lang="en">Green Day</strong> es una banda de Estados Unidos de punk rock integrada por <strong>Billie Joe Armstrong</strong>, <strong>Mike Dirnt</strong> y <strong>Tré Cool</strong>. 
+                <strong>El grupo nace en California, Berkeley</strong> y se había pensado como nombre para la banda <strong lang="en">Sweet Children</strong>, con el <em>baterista Jhon Kiffmeyer</em>.
+                En 1989 cambian su nombre al actual ya que el anterior se confundía con una banda local.</p>
+                <p><strong lang="en">Es uno de los muchos grupos que se originaron en el club <span lang="en">924 Gilman Street</span></strong>, que era un <em>sitio frecuentado por bandas locales de punk rock</em>.
+                También fue una de las bandas que <em>popularizaron y renacieron el punk rock en los Estados Unidos</em>, además que gracias a ellos, <em>influenciaron a más personas y
+                nacieron más grupos de punk rock</em>.</p>
+                <p>Hoy en día, Green Day sigue en pie, con álbumes célebres como <strong lang="en">American Idiot</strong> y <strong lang="en">21st Century Breakdown</strong>,
+                <strong>ambos con premios Grammy al mejor álbum de rock</strong>.</p>
+                <picture>
+                    <source srcset="imagenes_mobile/greenday_mobile.webp" media="(max-width: 480px)">
+                    <source srcset="imagenes_tablet/greenday_tablet.webp" media="(max-width: 800px)">
+                    <img src="imagenes/greenday_1.webp" alt="Imagen popular de los integrantes de la banda">
+                </picture>
+                <p class="parrafo-post-img">Editaron una trilogía de álbumes titulados <strong>¡Uno!, ¡Dos!, ¡Tré!</strong> editados en septiembre, 
+                noviembre y diciembre. <strong>Su álbum <span lang="en">Revolution Radio</span></strong> salió a la venta el <em>7 de octubre de 2016</em>. En <em>febrero de 2020</em> sacan
+                <strong>su último álbum, <span lang="en">Father of All Motherfuckers</span></strong> con 10 temas, editados por la discográfica <strong lang="en">Reprise</strong>.</p>
+                <p>La banda ha vendido casi <em>90 millones de copias en todo el mundo</em>. <strong>En 2010 recibieron un <span lang="en">Tony Awards</span></strong> y en 2011 <em>fueron nombrados como
+                    el segundo grupo más influyente surgido en los últimos 30 años</em>, <strong>solo por detrás de <span lang="en">Metallica</span></strong>.</p>
+                <p>Según una encuesta pública, <strong>en la publicación quincenal de <span lang="en">Rolling Stone</span>, se eligió a <span lang="en">Green Day</span> como la mejor banda de punk de la historia</strong>.</p>
+            </div>
+        </section>
+        <section id="historia">
+            <h2>Historia</h2>
+            <div>
+                    <h3>Inicio</h3>
+                        <p><strong>La banda nace en 1982 cuando Billie Joe Armstrong</strong> y <strong>Mike Dirnt</strong> a los diez años, comienzan una amistad. Tenían grupos en
+                        común como <em lang="en"><abbr title="Mister">Mr.</abbr> T <abbr title="Experience">XP</abbr></em>, <em lang="en"><abbr title="Operation">Op.</abbr> Ivy</em> y <em lang="en">Chrimpshrine</em>.
+                        Más a finales de los 90, también compartian gustos por <em lang="en"><abbr title="Social Distortion">SD</abbr></em> y <em lang="no"><abbr title="Hüsker Dü">HD</abbr></em>.
+                        Los dos <strong>llamaron al baterista John Kiffmeyer</strong> y al <strong>bajista Sean Hughes</strong> para dar nacimiento a la banda como <span lang="en">Sweet Children</span>.
+                        <em>Su primer concierto fue el 17 de octubre de 1987</em>, presentándose en <strong lang="en">Rod's Hickory Pit en Vallejo</strong> (hoy en dia es una estación de servicio), 
+                        ante treinta amigos.</p>
+                        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d785.1031483492224!2d-122.23470197350366!3d38.08406501393672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808573bae314c687%3A0xc1e035621cfe4eb3!2s199%20Lincoln%20Rd%20W%2C%20Vallejo%2C%20CA%2094590%2C%20EE.%20UU.!5e0!3m2!1ses!2sar!4v1700173700298!5m2!1ses!2sar" width="1280" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+                        <p>Tiempo después se <strong>asentaron en la ciudad de Berkeley, en California</strong>. En 1988, <em>Sean Hughes abandona la banda</em> y quedan tres integrantes.</p>
+                    <h3>Distintos contratos y álbumes</h3>
+                        <p><span lang="en">Green Day</span>, luego de cambiar su nombre tuvo diferentes contratos y etapas por álbumes, que son los siguientes:</p>
+                        <ul class="contratos">
+                            <li lang="en">1,039/Smoothed Out Slappy Hours</li>
+                            <li lang="en">Kerplunk!</li>
+                            <li lang="en">Dookie</li>
+                            <li lang="en">Insomniac</li>
+                            <li lang="en">Nimrod</li>
+                            <li lang="en">Warning</li>
+                            <li lang="en">American Idiot</li>
+                            <li lang="en">21st Century Breakdwon</li>
+                            <li>¡Uno!</li>
+                            <li>¡Dos!</li>
+                            <li>¡Tré!</li>
+                            <li lang="en">Revolution Radio</li>
+                            <li lang="en">Father of All Motherfuckers</li>
+                        </ul>
+                        <h3>Receso y actualidad</h3>
+                        <iframe id="video-the-american-dream" width="1280" height="720" src="https://www.youtube.com/embed/GDbkao-q1SA?si=9GUUYLSXmOFjISTg" title="Video de Greenday" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <p>Actualmente <span lang="en">Green Day</span> saco un nuevo sencillo, "<span lang="en">The American Dream Is Killing Me</span>", y para 2024 se espera que saquen el álbum <span lang="en">Saviors</span>.</p>
+                </div>
+        </section>
+        <section id="estilo-musical-influencias">
+            <h2>Estilo musical</h2>
+            <div>
+                <p>Se describe a <span lang="en">Green Day</span> como <strong>una banda que renovó al punk rock</strong>,
+                    <em>recargando energía de las rápidas y pegajosas canciones punk-pop de tres acordes</em>.</p>
+                <p>El <strong>punk rock es un género musical que surgió a mediados de los años 1970</strong>. 
+                    <em>Arraigadas en el rock and roll de los cincuenta y el garage rock de los sesenta</em>, las bandas de 
+                    punk rechazaron los excesos percibidos de la música rock convencional de los setenta. 
+                    Por lo general, producían <em>canciones cortas y de ritmo rápido con melodías y estilos de canto duros, instrumentación simplificada y, a menudo, gritaban letras políticas y antisistema</em>. 
+                    El punk adopta la ética del bricolaje; Muchas bandas autoproducen grabaciones y las distribuyen a través de sellos discográficos independientes.</p>
+                <p><span lang="en">Green Day</span> <strong>comenzó su carrera sobre el punk rock y un poco después, con el pop rock</strong>.
+                A medida que <span lang="en">Green Day</span> evolucionó, empezaron a <em>incorporar elementos de pop, rock alternativo y otros estilos</em> en su música.
+                Por ejemplo, a partir de 1997, presentan una amplia variedad de estilos, desde el <em>punk hasta baladas y experimentación musical</em>.</p>
+                <p>Luego, en <span lang="en">American Idiot</span> <strong>muestran elementos de rock ópera</strong> y en este último álbum que sacaron, incluyen generos como <strong>garage rock, pop, y glam rock</strong>.
+                Se puede decir que <span lang="en">Green Day</span> siempre <em>se mantuvo en el rock</em>, pero variando el estilo del mismo.</p>
+                <p>Se ha generado grandes polémicas sobre si el estilo musical del conjunto y <strong>el hecho que pertenezca a un sello importante se considere como punk verdadero</strong>.
+                <em>John Lydon, exintregrante de <span lang="en">Sex Pistols</span></em>, dijo que repudiaba a <span lang="en">Green Day</span> porque no hacian nada parecido al punk. Respondiendo a esto, sale esta frase:</p>
+                <blockquote>
+                    <p>"A veces pienso que nos hemos vuelto totalmente redundantes porque ahora somos una banda grande, hemos hecho un montón de dinero, 
+                        ya no somos punk rock. Pero después lo pienso y digo: puedes sacarnos del ambiente punk, pero no puedes sacar el punk de nosotros".</p>
+                    <cite>- Billie Joe Armstrong.</cite>
+                </blockquote>
+            </div>
+            <h2>Influencias</h2>
+            <div>
+                <p><span lang="en">Green Day</span> a menudo es comparado con bandas punk de la primera ola, como <em>Los Ramones</em>, <em lang="en">Sex Pistols</em>, <em lang="en">The Clash</em>, etc.
+                <strong>También fueron influenciados por una banda local de California, <span lang="en">Bad Religion</span></strong>. El mismo Billie Joe dijo que sus mayores influencias son
+                bandas de rock alternativo que emergieron de la escena punk como <em lang="no">Hüsker Dü</em> y <em lang="en">The Replacements</em>.</p>
+                <p>También <span lang="en">Green Day</span> fue influenciada por bandas como <em lang="en">Queen</em>, <em lang="en">The Who</em> y <strong>los pioneros del power pop, <span lang="en">Cheap Trick</span></strong>.</p>
+            </div>
+        </section>
+        <section id="miembros">
+            <h2>Miembros de la banda</h2>
+            <div>
+                <article class="integrantes-green-day">
+                <div class="texto-integrantes">
+                    <h3>Billie Joe Armstrong</h3>
+                    <p>Proviene de Oakland, California. Es <em>compositor, músico, productor discográfico y actor</em>. Billie Joe Armstrong es la <strong>guitarra y voz del equipo, al igual que el
+                       compositor</strong>. Fue uno de los dos fundadores. También llevo a cabo proyectos musicales fuera de <span lang="en">Green Day</span>, haciendo colaboraciones y <strong>fundó <span lang="en">Adeline Records</span>
+                       para ayudar a otras bandas locales</strong>. <em>Su gusto por la música comenzó a los 5 años y a los 14 años lanzó</em> <strong lang="en">Why do you want him?</strong>. <em>Un año después
+                       crea <span lang="en">Sweet Children</span> y a los 18 deja la escuela para dedicarse a <span lang="en">Green Day</span></em>.</p>
+                </div>
+                    <img src="imagenes/billie_joe.webp" alt="Integrante: Billie Joe Armstrong">
+                </article>
+                <article class="integrantes-green-day">
+                <div class="texto-integrantes">   
+                    <h3>Michael Ryan Pritchard</h3>
+                    <p>Conocido como Mike Dirnt, él es nacido en Berkeley, California y <strong>es el bajista de la banda</strong>. Su nombre artístico se lo dieron sus compañeros
+                      el colegio, que <em>así sonaba un bajo</em> (dirnt). Tuvo varios problemas familiares hasta sus 15 años, donde decide independizarse y le alquila una habitación
+                      a la madre de Billie Joe y luego <em>se hospeda en otra casa trabajando de cocinero</em>. <strong>Terminó la escuela, dejó la universidad y después de hablar por primera
+                      vez con Billie Joe, se hicieron amigos y después de componer algunos temas, fundaron la banda</strong>.</p>
+                </div>
+                      <img src="imagenes/mike_dirnt.webp" alt="Integrante: Mike Dirnt">
+                </article>
+                <article class="integrantes-green-day">
+                <div class="texto-integrantes">
+                    <h3>Frank Edwin Wright III</h3>
+                    <p><strong>Conocido como Tré Cool, él es el baterista actual de la banda</strong>. Nació en Francfort, Alemania pero a sus 14 años se mudó a Willits, California. 
+                    Él conocio a <em>Lawrence Livermore</em>, a quien el padre de Frank le había construido la casa, que era vecino de <em>Larry Livermore</em>, <strong>el cual fundó
+                    <span lang="en">Lookout Records</span></strong> y le dió tal apodo a Frank. <strong>Frank se unió a <span lang="en">The Lookouts</span></strong>, que <em>tocaba en conjunto con <span lang="en">Sweet Children</span></em>,
+                    pero el grupo se separó y en 1990, Frank entro a <span lang="en">Green Day</span> como <em>sustituto de Jhon Kiffmeyer</em>.</p>
+                </div>
+                <img src="imagenes/tre_cool.webp" alt="Integrante: Tré Cool">
+                </article>
+            </div>
+        </section>
+        <section id="alumnos-integrantes">
+            <h2>Datos de la entrega</h2>
+            <div id="div-alumnos">
+                <div class="tarjetas-alumnos">
+                    <h3>Martinez Macarena</h3>
+                    <ul>
+                        <li>13/05/2004 - 19 años</li>
+                        <li><a href="mailto:macarena.martinez@davinci.edu.ar">macarena.martinez@davinci.edu.ar</a></li>
+                    </ul>
+                    <picture>
+                        <source srcset="imagenes_mobile/foto_maky_mobile.webp" media="(max-width: 480px)">
+                        <img src="imagenes/foto_maky.webp" alt="Integrante: Martinez Macarena Villafañe Sol">
+                    </picture>
+                </div>
+                 <div class="tarjetas-alumnos">
+                    <h3>Fiorotto Mateo</h3>
+                    <ul>
+                        <li>27/04/2004 - 19 años</li>
+                        <li><a href="mailto:mateo.fiorotto@davinci.edu.ar">mateo.fiorotto@davinci.edu.ar</a></li>
+                    </ul>
+                    <picture>
+                        <source srcset="imagenes_mobile/foto_mateo_mobile.webp" media="(max-width: 480px)">
+                        <img src="imagenes/foto_mateo.webp" alt="Integrante: Fiorotto Mateo">
+                    </picture>
+                </div>
+                 <div id="mat-doc">
+                    <ul>
+                        <li data-negrita="Materia">Maquetado y Desarollo Web.</li>
+                        <li data-negrita="Docente">Mabel García.</li>
+                    </ul>
+                    <p>Sitio entregado para el trabajo final del primer cuatrimestre de la
+                        carrera "Diseño y Desarrollo Web" de la Escuela Da Vinci. Realizado en 2023.</p>
+                 </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="contenedor-links">
+        <ul>
+            <li><a class="icono-redes" id="red-fb" target="_blank" href="https://www.facebook.com/GreenDay/">Facebook</a></li>
+            <li><a class="icono-redes" id="red-ig" target="_blank" href="https://www.instagram.com/greenday">Instagram</a></li>
+            <li><a class="icono-redes" id="red-x" target="_blank" href="https://x.com/greenday">X</a></li>
+            <li><a class="icono-redes" id="red-tiktok" target="_blank" href="https://www.tiktok.com/@greenday">TikTok</a></li>
+            <li><a class="icono-redes" id="red-yt" target="_blank" href="https://www.youtube.com/greenday">YouTube</a></li>
+        </ul>
+        </div>
+    <a id="boton-volver" onclick="botonVuelta()">Volver al inicio</a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discografía - Green Day</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="javascript/scripts.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="titulo-pagina">Discografía</h1>
+        <div id="recuadro-negro">
+            <button id="boton-hamburguesa" onclick="abrirHamburguesa()">Mostrar Menú</button>
+        </div>
+        <div id="indice-pagina">
+            <nav>
+                <ul id="ul-nav">
+                    <li id="la-banda-indice"><a href="index.html">La Banda</a>
+                        <ul id="submenu-la-banda">
+                            <li><a onclick="eliminarInicio()" href="index.html#la-banda">Sobre la banda</a></li>
+                            <li><a onclick="eliminarInicio()" href="index.html#historia">Historia</a></li>
+                            <li><a onclick="eliminarInicio()" href="index.html#estilo-musical-influencias">Estilo musical e Influencias</a></li>
+                            <li><a onclick="eliminarInicio()" href="index.html#miembros">Miembros</a></li>
+                            <li><a onclick="eliminarInicio()" href="index.html#alumnos-integrantes">Alumnos</a></li>
+                        </ul>
+                    </li>
+                    <li id="discografia-indice"><a href="discografia.html">Discografía</a>
+                        <ul id="submenu-discografia">
+                            <li><a href="discografia.html#disco-21century">21st Century Breakdown</a></li>
+                            <li><a href="discografia.html#disco-american-idiot">American Idiot</a></li>
+                            <li><a href="discografia.html#disco-father-of-all-motherfuckers">Father of All Motherfuckers</a></li>
+                            <li><a href="discografia.html#disco-dookie">Dookie</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="formulario.html">Entradas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <button id="abrir-indice" onclick="abrirIndice()">Abrir índice</button>
+    <aside id="indice-index">
+        <button id="cerrar-indice" onclick="cerrarIndice()">X</button>
+        <h2 id="titulo-menu-indice">Índice</h2>
+        <ul>
+            <li><a href="#disco-21century">21st Century Breakdown</a></li>
+            <li><a href="#disco-american-idiot">American Idiot</a></li>
+            <li><a href="#disco-father-of-all-motherfuckers">Father of All Motherfuckers</a></li>
+            <li><a href="#disco-dookie">Dookie</a></li>
+        </ul>
+    </aside>
+    <main id="contenedor-pagina">
+        <section>
+            <h2 id="titulo-discografia">DISCOS</h2>
+            <div id="discografia-div">
+                <section id="century-breakdown">
+                    <a href="#disco-21century">
+                    <div class="tarjeta-disco">
+                        <picture>
+                            <source srcset="imagenes_mobile/21century_mobile.webp" media="(max-width: 480px)">
+                            <img src="imagenes/21century.webp" alt="Imagen del disco 21 century breakdown">
+                        </picture>
+                        <h3 lang="en">21st Century Breakdown</h3>
+                    </div></a>
+                </section>
+                <section id="american-idiot">
+                    <a href="#disco-american-idiot">
+                    <div class="tarjeta-disco">
+                        <picture>
+                            <source srcset="imagenes_mobile/americanidiot_mobile.webp" media="(max-width: 480px)">
+                            <img src="imagenes/americanidiot.webp" alt="Imagen del disco american idiot">
+                        </picture>
+                        <h3 lang="en">American Idiot</h3>
+                    </div></a>
+                </section>
+               <section id="fatherofallmotherfuckers">
+                <a href="#disco-father-of-all-motherfuckers">
+                    <div class="tarjeta-disco">
+                        <picture>
+                            <source srcset="imagenes_mobile/fatherofallmotherfuckers_mobile.webp" media="(max-width: 480px)">
+                            <img src="imagenes/fatherofallmotherfuckers.webp" alt="Imagen del disco father of all motherfuckers">
+                        </picture>
+                        <h3 lang="en">Father Of All Motherfuckers</h3>
+                    </div></a>
+                </section>
+                <section id="dookie">
+                    <a href="#disco-dookie">
+                    <div class="tarjeta-disco">
+                        <picture>
+                            <source srcset="imagenes_mobile/dookie_mobile.webp" media="(max-width: 480px)">
+                            <img src="imagenes/dookie.webp" alt="Imagen del disco dookie">
+                        </picture>
+                        <h3 lang="en">Dookie</h3>
+                    </div></a>
+                </section>
+             </div>
+            </section>
+        <section id="discos-informacion">
+            <h2>Informacion de la DiscografÍa</h2>
+            <p id="parrafo-discos-info">En esta <strong>discografía se incluyen 4 álbumes populares de la banda, siendo en total unos 12 álbumes</strong>.
+                La banda, además, <em>cuenta con un total de 5 recopilatorios, 5 EP, 4 DVDs, 38 sencillos,
+                39 videos musicales y 158 canciones de álbumes de estudio</em>.</p>
+                <p>Los discos incluidos son:</p>
+                <ol class="discos">
+                    <li lang="en">21st Century Breakdown</li>
+                    <li lang="en">American Idiot</li>
+                    <li lang="en">Father of All Motherfuckers</li>
+                    <li lang="en">Motherfuckers</li>
+                </ol>
+            <article id="disco-21century">
+                <h2 lang="en">21st Century Breakdown</h2>
+                <div>
+                    <p><strong><span lang="en">21st Century Breakdown</span> es el octavo álbum de <span lang="en">Green Day</span></strong>. Es la segunda ópera rock del grupo, 
+                        y es el primero producido por Butch Vig. Comenzó en enero de 2006. <strong>El proceso de grabación y composición 
+                        abarcó tres años y se llevó a cabo en cuatro estudios en California</strong>. Finalmente, <em>se terminó en abril de 2009</em>.</p>
+                    <p><em>El álbum se lanzó el 15 de mayo de 2009</em> a través de <span lang="en">Reprise Records</span>. Armstrong lo 
+                        describió como una "fotografía instantánea" de la época en la que vivimos, 
+                        <em>cuestionando y tratando de buscarle sentido a la manipulación egoísta a nuestro alrededor</em>, 
+                        proveniente del gobierno, la religión, los medios o francamente cualquier forma de autoridad.
+                    </p>
+                <div class="lista-canciones-div">
+                    <p>Sus canciones son:</p>
+                    <ol class="canciones">
+                        <li lang="en">Song of the Century</li>
+                        <li lang="en">21st Century Breakdown</li>
+                        <li lang="en">Know Your Enemy</li>
+                        <li>¡Viva la Gloria!</li>
+                        <li lang="en">Before the Lobotomy</li>
+                        <li lang="en">Christian's Inferno</li>
+                        <li lang="en">Last Night on Earth</li>
+                        <li lang="en">East Jesus Nowhere</li>
+                        <li lang="en">Peacemaker</li>
+                        <li lang="en">Last of the American Girls</li>
+                        <li lang="en">Murder City</li>
+                        <li>¿Viva la Gloria? <span lang="en">(Little Girl)</span></li>
+                        <li lang="en">Restless Heart Syndrome</li>
+                        <li lang="en">Horseshoe and Handgrenades</li>
+                        <li lang="en">The Static Age</li>
+                        <li lang="en">21 Guns</li>
+                        <li lang="en">American Eulogy: Mass Hysteria / Modern World</li>
+                        <li lang="en">See The Light</li>
+                    </ol>
+                </div>
+                    <section class="seccion-canciones">
+                        <h3 class="subtitulo-canciones">Algunas canciones</h3>
+                        <h4 lang="en">21 Guns</h4>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/64yrDBpcdwEdNY9loyEGbX?utm_source=generator" width="1326" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        <h4 lang="en">Know Your Enemy</h4>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5qtwzv99vOr5UTwnTixn7j?utm_source=generator" width="1326" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        <h4 lang="en">Last Night on Earth</h4>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5TpPSTItCwtZ8Sltr3vdzm?utm_source=generator" width="1326" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        <h4 lang="en">21 Century Breakdown</h4>
+                        <iframe class="ultimo-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0RT1qESYHlNcUJI0Yo5Hzl?utm_source=generator" width="1326" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </section>
+                </div>
+            </article>
+            <article id="disco-american-idiot">
+                <h2 lang="en">American Idiot</h2>
+                <div>
+                       <p><strong><span lang="en">American Idiot</span> es el séptimo álbum de <span lang="en">Green Day</span></strong>. El álbum fue producido por Rob 
+                        Cavallo y fue lanzado al mercado el 21 de septiembre de 2004 por el sello <span lang="en">Reprise Records</span>.</p>
+                        <p>A mediados de 2003, <strong>la banda comenzó la grabación y producción de lo que iba 
+                            a ser su séptimo álbum titulado <span lang="en">Cigarettes and Valentines</span></strong>. Sin embargo las 
+                            pistas fueron robadas y la banda decidió volver a empezar de cero, en vez de 
+                            volver a grabar <span lang="en">Cigarettes and Valentines</span>.​ Más tarde decidieron crear una ópera 
+                            rock, inspirada principalmente en las obras de <span lang="en">The Who</span> y numerosos musicales. </p>
+                        <p><strong>La historia del álbum cuenta la vida de <span lang="en">Jesus of Suburbia</span>, una especie de 
+                            antihéroe creado por Billie Joe Armstrong</strong>. Gran parte de las canciones del 
+                            álbum <em>tratan sobre la oposición a la administración Bush, y también de la 
+                            sociedad estadounidense contemporánea</em>. Tras la grabación temprana en Oakland, 
+                            California Studio 880, la banda <em>terminó el álbum en Los Ángeles</em>.</p>
+                    <div class="lista-canciones-div">
+                        <p>Sus canciones son:</p>
+                       <ol class="canciones">
+                           <li lang="en">American Idiot</li>
+                           <li lang="en">Jesus of Suburbia</li>
+                           <li lang="en">Holiday</li>
+                           <li lang="en">Boulevard of Broken Dreams</li>
+                           <li lang="en">Are We the Waiting</li>
+                           <li lang="en">St. Jimmy</li>
+                           <li lang="en">Give Me Novacaine</li>
+                           <li lang="en">She's a Rebel</li>
+                           <li lang="en">Extraordinary Girl</li>
+                           <li lang="en">Letterbomb</li>
+                           <li lang="en">Wake Me up When September Ends</li>
+                           <li lang="en">Homecoming</li>
+                           <li lang="en">Whatsername</li>
+                       </ol>
+                    </div>
+                       <section class="seccion-canciones">
+                            <h3 class="subtitulo-canciones">Algunas canciones</h3>
+                           <h4 lang="en">American Idiot</h4>
+                           <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6nTiIhLmQ3FWhvrGafw2zj?utm_source=generator" width="1326" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                           <h4 lang="en">Boulevard of Broken Dreams</h4>
+                           <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5GorCbAP4aL0EJ16frG2hd?utm_source=generator" width="1326" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                           <h4 lang="en">Holiday</h4>
+                           <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5vfjUAhefN7IjHbTvVCT4Z?utm_source=generator" width="1326" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                           <h4 lang="en">Wake Me up When September Ends</h4>
+                           <iframe class="ultimo-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3ZffCQKLFLUvYM59XKLbVm?utm_source=generator" width="1326" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                       </section>
+                   </div>
+                </article>
+        
+
+            <article id="disco-father-of-all-motherfuckers">
+                <h2 lang="en">Father of All Motherfuckers</h2>
+                <div>
+                       <p><strong><span lang="en">Father of All Motherfuckers</span> es el decimotercer álbum de estudio de <span lang="en">Green Day</span></strong> 
+                        y fue <em>lanzado el 7 de febrero de 2020</em> a través de <span lang="en">Reprise Records</span>.</p>
+                       <p>Armstrong declaró que las letras del álbum <em>tratan sobre la vida, la muerte y la fiesta
+                        y el estilo de vida "de que no te importe un carajo"</em>.</p>
+                    <div class="lista-canciones-div">
+                       <p>Sus canciones son:</p>
+                       <ol class="canciones">
+                           <li lang="en">Father of All...</li>
+                           <li lang="en">Fire, Ready, Aim</li>
+                           <li lang="en">Oh Yeah!</li>
+                           <li lang="en">Meet Me on the Roof</li>
+                           <li lang="en">I Was a Teenage Teenager</li>
+                           <li lang="en">Stab You in the Heart</li>
+                           <li lang="en">Sugar Youth</li>
+                           <li lang="en">Junkies on a High</li>
+                           <li lang="en">Take the Money and Crawl</li>
+                           <li lang="en">Graffitia</li>
+                       </ol>
+                    </div>
+                       <section class="seccion-canciones">
+                            <h3 class="subtitulo-canciones">Algunas canciones</h3>
+                           <h4 lang="en">Father of All...</h4>
+                           <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/17C1AVZVh5jhJU4eAcovpl?utm_source=generator" width="1326" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                           <h4 lang="en">Oh Yeah!</h4>
+                           <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1VsFIGQytB26cDHViCLjQi?utm_source=generator" width="1326" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                           <h4 lang="en">Fire, Ready, Aim</h4>
+                           <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2ixD4Uu8tv5i4aiB16aamk?utm_source=generator" width="1326" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                           <h4 lang="en">Meet Me on the Roof</h4>
+                           <iframe class="ultimo-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3YCUPKddcFr4s6iL4mj6Xy?utm_source=generator" width="1326" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                       </section>
+                   </div>
+            </article>
+
+            <article id="disco-dookie">
+                <h2 lang="en">Dookie</h2>
+                <div>
+                       <p><strong><span lang="en">Dookie</span> es el tercer álbum de <span lang="en">Green Day</span></strong>. El álbum fue la primera colaboración de 
+                        la banda con Rob Cavallo. <em>Lanzado el 1 de febrero de 1994</em> bajo el sello <span lang="en">Reprise Records</span>.
+                        Dookie se convirtió en un éxito en todo el mundo, consiguiendo llegar
+                        al <em>puesto número dos en el Billboard 200 estadounidense y logrando entrar en las listas de seis países más</em>.</p>
+                       <p><em>El disco es el más exitoso de Green Day</em> en ventas hasta la fecha con <em>20 millones de copias vendidas en todo el mundo</em>.</p>
+                        <p><em>Dookie ganó el premio Grammy al mejor álbum de música alternativa en 1995</em>
+                            y es el primer <em>disco álbum de diamante</em> que posee Green Day de tres.</p>
+                    <div class="lista-canciones-div">
+                       <p>Sus canciones son:</p>
+                       <ol class="canciones">
+                           <li lang="en">Burnout</li>
+                           <li lang="en">Having a Blast</li>
+                           <li lang="en">Chump</li>
+                           <li lang="en">Longview</li>
+                           <li lang="en">Welcome to Paradise</li>
+                           <li lang="en">Pulling Teeth</li>
+                           <li lang="en">Basket Case</li>
+                           <li lang="en">She</li>
+                           <li lang="en">Sassafras Roots</li>
+                           <li lang="en">When I Come Around</li>
+                           <li lang="en">Coming Clean</li>
+                           <li lang="en">Emenius Sleeps</li>
+                           <li lang="en">In the End</li>
+                           <li lang="en">F.O.D</li>
+                           <li lang="en">All by Myself</li>
+                       </ol>
+                    </div>
+                       <section class="seccion-canciones">
+                         <h3 class="subtitulo-canciones">Algunas canciones</h3>
+                           <h4 lang="en">Basket Case</h4>
+                           <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6L89mwZXSOwYl76YXfX13s?utm_source=generator" width="1326" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                           <h4 lang="en">When I Come Around</h4>
+                           <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1Dr1fXbc2IxaK1Mu8P8Khz?utm_source=generator" width="1326" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>                           
+                           <h4 lang="en">Welcome to Paradise</h4>
+                           <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5kr3j5Clb9rjEposoMyLVt?utm_source=generator" width="1326" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                           <h4 lang="en">Longview</h4>
+                           <iframe class="ultimo-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3LRJbFT9rKoKv4aW7PuBJC?utm_source=generator" width="1326" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                       </section>
+                   </div>
+                </article>
+                <div id="explora-spotify">
+                    <p><a target="_blank" href="https://open.spotify.com/intl-es/artist/7oPftvlwr6VrsViSDV7fJY">Explora en spotify</a></p>
+                </div>
+            </section>
+    </main>
+    <footer>
+        <div id="contenedor-links">
+        <ul>
+            <li><a class="icono-redes" id="red-fb" target="_blank" href="https://www.facebook.com/GreenDay/">Facebook</a></li>
+            <li><a class="icono-redes" id="red-ig" target="_blank" href="https://www.instagram.com/greenday">Instagram</a></li>
+            <li><a class="icono-redes" id="red-x" target="_blank" href="https://x.com/greenday">X</a></li>
+            <li><a class="icono-redes" id="red-tiktok" target="_blank" href="https://www.tiktok.com/@greenday">TikTok</a></li>
+            <li><a class="icono-redes" id="red-yt" target="_blank" href="https://www.youtube.com/greenday">YouTube</a></li>
+        </ul>
+        </div>
+    <a id="boton-volver" onclick="botonVuelta()">Volver al inicio</a>
+    </footer>
+</body>
+</html>

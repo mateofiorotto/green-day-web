@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Gracias! - Green Day</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="javascript/scripts.js"></script>
+</head>
+<body>
+    <header>
+        <h1 lang="en" id="titulo-pagina">Green Day</h1>
+        <div id="recuadro-negro">
+            <button id="boton-hamburguesa" onclick="abrirHamburguesa()">Mostrar Menú</button>
+        </div>
+        <div id="indice-pagina">
+            <nav>
+                <ul id="ul-nav">
+                    <li id="la-banda-indice"><a href="index.html">La Banda</a>
+                        <ul id="submenu-la-banda">
+                            <li><a onclick="eliminarInicio()" href="index.html#la-banda">Sobre la banda</a></li>
+                            <li><a onclick="eliminarInicio()" href="index.html#historia">Historia</a></li>
+                            <li><a onclick="eliminarInicio()" href="index.html#estilo-musical-influencias">Estilo musical e Influencias</a></li>
+                            <li><a onclick="eliminarInicio()" href="index.html#miembros">Miembros</a></li>
+                            <li><a onclick="eliminarInicio()" href="index.html#alumnos-integrantes">Alumnos</a></li>
+                        </ul>
+                    </li>
+                    <li id="discografia-indice"><a href="discografia.html">Discografía</a>
+                        <ul id="submenu-discografia">
+                            <li><a href="discografia.html#disco-21century">21st Century Breakdown</a></li>
+                            <li><a href="discografia.html#disco-american-idiot">American Idiot</a></li>
+                            <li><a href="discografia.html#disco-father-of-all-motherfuckers">Father of All Motherfuckers</a></li>
+                            <li><a href="discografia.html#disco-dookie">Dookie</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="formulario.html">Entradas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="contenedor-pagina">
+        <section id="texto-gracias">
+            <h2 id="titulo-gracias">¡Gracias!</h2>
+            <p id="parrafo-gracias">Queremos expresar nuestro más sincero agradecimiento por haber adquirido 
+                entradas para el próximo concierto de Green Day. ¡Estamos emocionados de que hayas decidido 
+                unirte a nosotros para lo que promete ser una noche inolvidable llena de música y energía 
+                increíble! Tu apoyo significa mucho para nosotros, y estamos ansiosos de compartir 
+                esta experiencia única contigo. Green Day está listo para ofrecer un espectáculo 
+                espectacular, y estamos seguros de que disfrutarás cada momento.</p>
+            <p id="parrafo-vuelve-a">Vuelve a:</p>
+            <ul id="gracias-indice">
+                <li><a href="index.html">La Banda</a></li>
+                <li><a href="discografia.html">Discografía</a></li>
+                <li><a href="formulario.html">Entradas</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div id="contenedor-links">
+        <ul>
+            <li><a class="icono-redes" id="red-fb" target="_blank" href="https://www.facebook.com/GreenDay/">Facebook</a></li>
+            <li><a class="icono-redes" id="red-ig" target="_blank" href="https://www.instagram.com/greenday">Instagram</a></li>
+            <li><a class="icono-redes" id="red-x" target="_blank" href="https://x.com/greenday">X</a></li>
+            <li><a class="icono-redes" id="red-tiktok" target="_blank" href="https://www.tiktok.com/@greenday">TikTok</a></li>
+            <li><a class="icono-redes" id="red-yt" target="_blank" href="https://www.youtube.com/greenday">YouTube</a></li>
+        </ul>
+        </div>
+    <a id="boton-volver" onclick="botonVuelta()">Volver al inicio</a>
+    </footer>
+</body>
+</html>
